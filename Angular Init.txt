@@ -1,0 +1,15 @@
+npm i -g @angular/cli@19        To install Angular  
+ng new (name) --no-standalone       install app no standalone
+cd (name) to open this folder
+ng s -o       build the app - open live server
+ng g c (name)   to create new component 
+take selector from (name).component and put it in app.component.html in tag
+like this (<app-one></app-one>)
+
+npm i bootstrap@latest @ng-bootstrap/ng-bootstrap       To Install bootstrap For Angular
+
+npm i jwt-decode                to decode token and get the data 
+npm i socket.io-client          connect front socketIO with backend socketIO
+
+ng g g       - select (CanActive)                     to install guard 
+
