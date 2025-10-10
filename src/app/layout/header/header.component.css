@@ -11,9 +11,11 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
   margin-bottom: 0 !important; /* Remove Bootstrap default margin */
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
+  
 }
 
 .navbar-brand {

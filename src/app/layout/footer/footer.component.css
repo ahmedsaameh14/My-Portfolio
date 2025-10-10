@@ -2,7 +2,7 @@
 .portfolio-footer {
   /* Updated gradient from purple to dark colors */
   background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
-  /* border-radius: 20px 20px 0 0; */
+  /* border-radius: 0px 0px 0 0; */
   box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
   padding: 3rem 0 1.5rem 0;
   color: white;
@@ -157,7 +157,7 @@
 @media (max-width: 768px) {
   .portfolio-footer {
     padding: 2rem 0 1rem 0;
-    border-radius: 15px 15px 0 0;
+    /* border-radius: 15px 15px 0 0; */
   }
 
   .footer-brand {
