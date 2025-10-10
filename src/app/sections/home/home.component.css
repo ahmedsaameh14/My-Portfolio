@@ -1,6 +1,6 @@
 .portfolio-hero {
   /* Updated gradient from purple to dark colors */
-  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+  background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
   min-height: 100vh;
   margin-top: 0 !important;
   padding-top: 0 !important;

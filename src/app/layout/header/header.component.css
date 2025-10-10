@@ -6,7 +6,7 @@ body {
 /* Remove white space between navbar and hero */
 .portfolio-navbar {
   /* Changed from purple gradient to dark gradient */
-  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+  background: linear-gradient(360deg, #1a1a1a 0%, #000000 100%);
   /* border-radius: 0 0 20px 20px; */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
