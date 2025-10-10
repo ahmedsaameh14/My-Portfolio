@@ -15,7 +15,7 @@ export const routes: Routes = [
             {path:'' , component: MainComponent},
             {path:'about' , component: AboutComponent},
             {path:'skills' , component: SkillsComponent},
-            {path:'education' , component: EducationComponent},
+            // {path:'education' , component: EducationComponent},
             {path:'experience' , component: ExperienceComponent},
             {path:'projects' , component: ProjectsComponent},
             {path:'contact' , component: ContactComponent},
