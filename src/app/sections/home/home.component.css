@@ -52,6 +52,12 @@ section {
   margin-bottom: 20px;
 }
 
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .social-icon:hover {
   transform: translateY(-3px);
   background: rgba(255, 255, 255, 0.2);
@@ -67,6 +73,7 @@ section {
   border: 2px solid rgba(255, 255, 255, 0.3);
   color: white;
   transition: 0.3s;
+  text-decoration: none !important;
 }
 
 .download-cv-btn:hover {
@@ -105,7 +112,11 @@ section {
     font-size: 1.1rem;
   }
   .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+  }
+  .social-icon {
+    width: 75px;
+    height: 75px;
   }
 }
