@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: #f8f9fa;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -11,11 +12,31 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
   margin-bottom: 0 !important; /* Remove Bootstrap default margin */
+=======
+/* Portfolio Navbar - Transparent to Solid on Scroll */
+.portfolio-navbar {
+  background: transparent;
+  padding: 1.2rem 0;
+  margin-bottom: 0 !important;
+>>>>>>> 0056e46 (Updated frontend structure)
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+<<<<<<< HEAD
   
+=======
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+/* Scrolled State - Solid Background */
+.portfolio-navbar.header-scrolled {
+  background: rgba(30, 60, 114, 0.98);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(30, 60, 114, 0.3);
+  padding: 0.8rem 0;
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 .navbar-brand {
@@ -47,33 +68,88 @@ body {
 }
 
 .nav-link {
+<<<<<<< HEAD
   color: rgba(255, 255, 255, 0.9) !important;
+=======
+  color: rgba(255, 255, 255, 0.95) !important;
+>>>>>>> 0056e46 (Updated frontend structure)
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+<<<<<<< HEAD
   padding: 12px 24px !important;
   border-radius: 25px;
   transition: all 0.3s ease;
   position: relative;
   margin: 0 8px;
+=======
+  padding: 10px 20px !important;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 0 6px;
+>>>>>>> 0056e46 (Updated frontend structure)
   text-decoration: none;
 }
 
 .nav-link:hover {
   color: white !important;
+<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+=======
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 .nav-link.active {
   color: white !important;
+<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+=======
+  background-color: rgba(255, 255, 255, 0.2);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 .nav-link i {
   margin-right: 8px;
   font-size: 1.1rem;
 }
+<<<<<<< HEAD
+=======
+
+/* Mobile Menu Styling */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: rgba(30, 60, 114, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 8px 24px rgba(30, 60, 114, 0.3);
+  }
+
+  .portfolio-navbar.header-scrolled .navbar-collapse {
+    background: rgba(30, 60, 114, 0.98);
+  }
+
+  .nav-link {
+    margin: 8px 0;
+    text-align: center;
+    padding: 12px 20px !important;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(0);
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+>>>>>>> 0056e46 (Updated frontend structure)

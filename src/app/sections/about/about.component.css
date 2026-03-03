@@ -4,7 +4,11 @@ section {
 
 /* About Section Styles */
 .about-section {
+<<<<<<< HEAD
   background: linear-gradient(360deg, #1a1a1a 0%, #000000 100%);
+=======
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   padding: 5rem 0;
   position: relative;
   overflow: hidden;
@@ -15,7 +19,11 @@ section {
   position: absolute;
   width: 100px;
   height: 100px;
+<<<<<<< HEAD
   border: 1px solid rgba(255, 255, 255, 0.1);
+=======
+  border: 1px solid rgba(42, 82, 152, 0.08);
+>>>>>>> 0056e46 (Updated frontend structure)
   border-radius: 50%;
 }
 
@@ -38,14 +46,24 @@ section {
   background: white;
   border-radius: 20px;
   padding: 3rem;
+<<<<<<< HEAD
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(102, 126, 234, 0.1);
+=======
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(42, 82, 152, 0.1);
+>>>>>>> 0056e46 (Updated frontend structure)
   transition: all 0.3s ease;
 }
 
 .about-content:hover {
   transform: translateY(-5px);
+<<<<<<< HEAD
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+=======
+  box-shadow: 0 12px 32px rgba(42, 82, 152, 0.15);
+  border-color: rgba(42, 82, 152, 0.2);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 .section-title {
@@ -64,13 +82,21 @@ section {
   left: 0;
   width: 60px;
   height: 4px;
+<<<<<<< HEAD
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+=======
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   border-radius: 2px;
 }
 
 .section-subtitle {
   font-size: 1.3rem;
+<<<<<<< HEAD
   color: #667eea;
+=======
+  color: #2a5298;
+>>>>>>> 0056e46 (Updated frontend structure)
   font-weight: 500;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -97,7 +123,11 @@ section {
 
 /* Highlight text */
 .highlight {
+<<<<<<< HEAD
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+=======
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -106,7 +136,11 @@ section {
 
 /* Quote styling */
 .about-quote {
+<<<<<<< HEAD
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+=======
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   color: white;
   padding: 2rem;
   border-radius: 15px;
@@ -143,7 +177,11 @@ section {
   border-radius: 15px;
   padding: 2rem;
   margin-top: 2rem;
+<<<<<<< HEAD
   border-left: 5px solid #667eea;
+=======
+  border-left: 5px solid #2a5298;
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 .stat-item {
@@ -154,7 +192,11 @@ section {
 .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
+<<<<<<< HEAD
   color: #667eea;
+=======
+  color: #2a5298;
+>>>>>>> 0056e46 (Updated frontend structure)
   display: block;
 }
 
@@ -168,6 +210,7 @@ section {
 
 /* Mobile Styles */
 @media (max-width: 991.98px) {
+<<<<<<< HEAD
   .navbar-collapse {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
@@ -189,6 +232,10 @@ section {
 
   .navbar-brand {
     font-size: 1.5rem;
+=======
+  .about-section {
+    padding: 3rem 0;
+>>>>>>> 0056e46 (Updated frontend structure)
   }
 }
 

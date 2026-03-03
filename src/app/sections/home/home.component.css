@@ -3,39 +3,106 @@ section {
 }
 
 .portfolio-hero {
+<<<<<<< HEAD
   background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+=======
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #1a1a2e 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 
 /* Profile Image */
+<<<<<<< HEAD
+=======
+.profile-image-container {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+>>>>>>> 0056e46 (Updated frontend structure)
 .profile-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+<<<<<<< HEAD
   border: 4px solid rgba(255, 255, 255, 0.3);
   object-fit: cover;
   transition: transform 0.3s ease;
+=======
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 .profile-image:hover {
   transform: scale(1.05);
+<<<<<<< HEAD
+=======
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 /* Name */
 .hero-name {
+<<<<<<< HEAD
   font-size: 3.2rem;
   font-weight: 700;
   letter-spacing: -1px;
+=======
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  animation: fadeInUp 1s ease-out 0.4s both;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 /* Title */
 .hero-title {
+<<<<<<< HEAD
   font-size: 1.4rem;
   text-transform: uppercase;
   opacity: 0.9;
+=======
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  opacity: 0.95;
+  font-weight: 400;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease-out 0.6s both;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 /* Social Icons */
@@ -47,9 +114,17 @@ section {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
+<<<<<<< HEAD
   border: 2px solid rgba(255, 255, 255, 0.2);
   transition: 0.3s;
   margin-bottom: 20px;
+=======
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-out 0.8s both;
+  backdrop-filter: blur(10px);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 .social-icon img {
@@ -59,12 +134,20 @@ section {
 }
 
 .social-icon:hover {
+<<<<<<< HEAD
   transform: translateY(-3px);
   background: rgba(255, 255, 255, 0.2);
+=======
+  transform: translateY(-5px) scale(1.1);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 /* Download button */
 .download-cv-btn {
+<<<<<<< HEAD
   padding: 12px 30px;
   border-radius: 50px;
   font-weight: 600;
@@ -79,6 +162,28 @@ section {
 .download-cv-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-3px);
+=======
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  display: inline-block;
+  animation: fadeInUp 1s ease-out 1s both;
+  backdrop-filter: blur(10px);
+  letter-spacing: 1px;
+}
+
+.download-cv-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 /* Decorative circles (lighter to avoid blocking LCP) */
@@ -105,6 +210,7 @@ section {
 
 /* Mobile */
 @media (max-width: 768px) {
+<<<<<<< HEAD
   .hero-name {
     font-size: 2.4rem;
   }
@@ -118,5 +224,33 @@ section {
   .social-icon {
     width: 75px;
     height: 75px;
+=======
+  .portfolio-hero {
+    padding-top: 100px;
+  }
+  
+  .hero-name {
+    font-size: 2.4rem;
+  }
+  
+  .hero-title {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+  
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .download-cv-btn {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+>>>>>>> 0056e46 (Updated frontend structure)
   }
 }

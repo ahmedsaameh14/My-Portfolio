@@ -3,7 +3,11 @@ section {
 }
 
 .contact-section {
+<<<<<<< HEAD
   background: linear-gradient(360deg, #1a1a1a 0%, #000000 100%);
+=======
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   padding: 5rem 0;
   position: relative;
   overflow: hidden;
@@ -50,7 +54,11 @@ body::after {
   left: 0;
   right: 0;
   height: 5px;
+<<<<<<< HEAD
   background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
+=======
+  background: linear-gradient(90deg, #2a5298, #1e3c72, #2a5298, #1e3c72);
+>>>>>>> 0056e46 (Updated frontend structure)
   background-size: 300% 100%;
   animation: gradientShift 3s ease infinite;
 }
@@ -70,8 +78,13 @@ body::after {
   padding: 3rem 2rem 2rem;
   background: linear-gradient(
     135deg,
+<<<<<<< HEAD
     rgba(102, 126, 234, 0.1) 0%,
     rgba(118, 75, 162, 0.1) 100%
+=======
+    rgba(42, 82, 152, 0.1) 0%,
+    rgba(30, 60, 114, 0.1) 100%
+>>>>>>> 0056e46 (Updated frontend structure)
   );
   position: relative;
 }
@@ -79,7 +92,11 @@ body::after {
 .contact-title {
   font-size: 2.5rem;
   font-weight: 700;
+<<<<<<< HEAD
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+=======
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -116,7 +133,11 @@ body::after {
 }
 
 .form-label i {
+<<<<<<< HEAD
   color: #667eea;
+=======
+  color: #2a5298;
+>>>>>>> 0056e46 (Updated frontend structure)
   font-size: 1rem;
 }
 
@@ -131,14 +152,23 @@ body::after {
 }
 
 .form-control:focus {
+<<<<<<< HEAD
   border-color: #667eea;
   box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15);
+=======
+  border-color: #2a5298;
+  box-shadow: 0 0 0 0.2rem rgba(42, 82, 152, 0.15);
+>>>>>>> 0056e46 (Updated frontend structure)
   background-color: white;
   transform: translateY(-2px);
 }
 
 .form-control:hover {
+<<<<<<< HEAD
   border-color: #667eea;
+=======
+  border-color: #2a5298;
+>>>>>>> 0056e46 (Updated frontend structure)
   background-color: white;
 }
 
@@ -148,7 +178,11 @@ textarea.form-control {
 }
 
 .submit-btn {
+<<<<<<< HEAD
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+=======
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   border: none;
   border-radius: 15px;
   padding: 1rem 3rem;
@@ -186,7 +220,11 @@ textarea.form-control {
 
 .submit-btn:hover {
   transform: translateY(-3px);
+<<<<<<< HEAD
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+=======
+  box-shadow: 0 10px 25px rgba(42, 82, 152, 0.3);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 .submit-btn:active {
@@ -196,7 +234,11 @@ textarea.form-control {
 /* Floating Icons */
 .floating-icon {
   position: absolute;
+<<<<<<< HEAD
   color: rgba(102, 126, 234, 0.1);
+=======
+  color: rgba(42, 82, 152, 0.08);
+>>>>>>> 0056e46 (Updated frontend structure)
   font-size: 2rem;
   animation: floatIcon 6s ease-in-out infinite;
 }
@@ -249,7 +291,11 @@ textarea.form-control {
   left: 50%;
   width: 0;
   height: 2px;
+<<<<<<< HEAD
   background: linear-gradient(90deg, #667eea, #764ba2);
+=======
+  background: linear-gradient(90deg, #2a5298, #1e3c72);
+>>>>>>> 0056e46 (Updated frontend structure)
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }

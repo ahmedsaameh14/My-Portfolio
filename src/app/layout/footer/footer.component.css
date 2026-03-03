@@ -1,9 +1,15 @@
 
 .portfolio-footer {
+<<<<<<< HEAD
   /* Updated gradient from purple to dark colors */
   background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
   /* border-radius: 0px 0px 0 0; */
   box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+=======
+  /* Updated gradient to match new theme */
+  background: linear-gradient(180deg, #1e3c72 0%, #1a1a2e 100%);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+>>>>>>> 0056e46 (Updated frontend structure)
   padding: 3rem 0 1.5rem 0;
   color: white;
 }

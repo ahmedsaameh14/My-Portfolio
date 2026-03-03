@@ -9,7 +9,11 @@ section {
 
 /* Projects Section Styles */
 .projects-section {
+<<<<<<< HEAD
   background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+=======
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   padding: 5rem 0;
   position: relative;
   overflow: hidden;
@@ -19,7 +23,11 @@ section {
 .section-title {
   font-size: 3rem;
   font-weight: 700;
+<<<<<<< HEAD
   color: white;
+=======
+  color: #1e3c72;
+>>>>>>> 0056e46 (Updated frontend structure)
   margin-bottom: 1rem;
   position: relative;
   display: inline-block;
@@ -28,7 +36,11 @@ section {
 
 .section-subtitle {
   font-size: 1.3rem;
+<<<<<<< HEAD
   color: rgba(255, 255, 255, 0.9);
+=======
+  color: #495057;
+>>>>>>> 0056e46 (Updated frontend structure)
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -38,8 +50,13 @@ section {
   background: white;
   border-radius: 20px;
   overflow: hidden;
+<<<<<<< HEAD
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(102, 126, 234, 0.1);
+=======
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(42, 82, 152, 0.1);
+>>>>>>> 0056e46 (Updated frontend structure)
   transition: all 0.3s ease;
   position: relative;
   margin-bottom: 2rem;
@@ -48,8 +65,14 @@ section {
 }
 
 .project-card:hover {
+<<<<<<< HEAD
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+=======
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(42, 82, 152, 0.2);
+  border-color: rgba(42, 82, 152, 0.3);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 /* Project Image */
@@ -57,7 +80,11 @@ section {
   position: relative;
   overflow: hidden;
   height: 250px;
+<<<<<<< HEAD
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+=======
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
 }
 
 .project-image img {
@@ -79,7 +106,11 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< HEAD
   background: linear-gradient(45deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
+=======
+  background: linear-gradient(45deg, rgba(42, 82, 152, 0.8) 0%, rgba(30, 60, 114, 0.8) 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -95,7 +126,11 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
+<<<<<<< HEAD
   color: #667eea;
+=======
+  color: #2a5298;
+>>>>>>> 0056e46 (Updated frontend structure)
   border: none;
   border-radius: 50px;
   padding: 12px 24px;
@@ -115,7 +150,11 @@ section {
 }
 
 .project-link-btn:hover {
+<<<<<<< HEAD
   background: #667eea;
+=======
+  background: #2a5298;
+>>>>>>> 0056e46 (Updated frontend structure)
   color: white;
   text-decoration: none;
 }
@@ -130,7 +169,11 @@ section {
 .project-name {
   font-size: 2.0rem;
   font-weight: 800;
+<<<<<<< HEAD
   background: linear-gradient(135deg, #2c3e50 0%, #667eea 100%);
+=======
+  background: linear-gradient(135deg, #2c3e50 0%, #2a5298 100%);
+>>>>>>> 0056e46 (Updated frontend structure)
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -158,7 +201,11 @@ section {
 .tools-label {
   font-size: 0.95rem;
   font-weight: 700;
+<<<<<<< HEAD
   color: #667eea;
+=======
+  color: #2a5298;
+>>>>>>> 0056e46 (Updated frontend structure)
   margin-bottom: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -205,7 +252,11 @@ section {
 }
 
 .project-link {
+<<<<<<< HEAD
   color: #667eea;
+=======
+  color: #2a5298;
+>>>>>>> 0056e46 (Updated frontend structure)
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -216,7 +267,11 @@ section {
 }
 
 .project-link:hover {
+<<<<<<< HEAD
   color: #764ba2;
+=======
+  color: #1e3c72;
+>>>>>>> 0056e46 (Updated frontend structure)
   text-decoration: none;
   transform: translateX(5px);
 }
@@ -317,7 +372,11 @@ section {
   position: absolute;
   width: 120px;
   height: 120px;
+<<<<<<< HEAD
   border: 2px solid rgba(102, 126, 234, 0.1);
+=======
+  border: 2px solid rgba(42, 82, 152, 0.08);
+>>>>>>> 0056e46 (Updated frontend structure)
   border-radius: 50%;
   animation: rotate 25s linear infinite;
 }
