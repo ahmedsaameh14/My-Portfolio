@@ -1,370 +1,204 @@
-section {
-  scroll-margin-top: 50px; /* adjust based on navbar height */
-}
-
 .contact-section {
-<<<<<<< HEAD
-  background: linear-gradient(360deg, #1a1a1a 0%, #000000 100%);
-=======
-  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  padding: 5rem 0;
+  background-color: #0a192f;
+  padding: 100px 0;
   position: relative;
   overflow: hidden;
 }
 
-
-
-body::after {
-  content: "";
-  position: absolute;
-  top: 20%;
-  right: -10%;
-  width: 300px;
-  height: 300px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 50%;
-  animation: pulse 15s ease-in-out infinite;
-  z-index: 1;
-}
-
-
-
-
-.contact-container {
-  position: relative;
-  z-index: 10;
-  padding: 4rem 0;
-}
-
+/* Glassmorphism Card */
 .contact-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(17, 34, 64, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 20px;
   overflow: hidden;
   position: relative;
-}
-
-.contact-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-<<<<<<< HEAD
-  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
-=======
-  background: linear-gradient(90deg, #2a5298, #1e3c72, #2a5298, #1e3c72);
->>>>>>> 0056e46 (Updated frontend structure)
-  background-size: 300% 100%;
-  animation: gradientShift 3s ease infinite;
-}
-
-@keyframes gradientShift {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
+  z-index: 2;
 }
 
 .contact-header {
+  padding: 40px 40px 20px;
   text-align: center;
-  padding: 3rem 2rem 2rem;
-  background: linear-gradient(
-    135deg,
-<<<<<<< HEAD
-    rgba(102, 126, 234, 0.1) 0%,
-    rgba(118, 75, 162, 0.1) 100%
-=======
-    rgba(42, 82, 152, 0.1) 0%,
-    rgba(30, 60, 114, 0.1) 100%
->>>>>>> 0056e46 (Updated frontend structure)
-  );
-  position: relative;
 }
 
 .contact-title {
-  font-size: 2.5rem;
+  color: #ccd6f6;
   font-weight: 700;
-<<<<<<< HEAD
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-=======
-  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem;
-  position: relative;
+  font-size: 2.2rem;
+}
+
+.contact-title span {
+  color: #64ffda;
 }
 
 .contact-subtitle {
-  color: #6c757d;
-  font-size: 1.1rem;
-  margin-bottom: 0;
-  opacity: 0.8;
+  color: #8892b0;
+  font-size: 0.95rem;
 }
 
+/* Form Styling */
 .contact-form {
-  padding: 2rem 3rem 3rem;
-}
-
-.form-group {
-  margin-bottom: 2rem;
-  position: relative;
+  padding: 0 40px 40px;
 }
 
 .form-label {
+  color: #64ffda;
+  font-size: 0.8rem;
   font-weight: 600;
-  color: #495057;
-  margin-bottom: 0.75rem;
-  font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.form-label i {
-<<<<<<< HEAD
-  color: #667eea;
-=======
-  color: #2a5298;
->>>>>>> 0056e46 (Updated frontend structure)
-  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .form-control {
-  border: 2px solid #e9ecef;
-  border-radius: 15px;
-  padding: 1rem 1.25rem;
-  font-size: 1rem;
+  background: #0a192f !important;
+  border: 1px solid #233554 !important;
+  color: #ccd6f6 !important;
+  padding: 12px 15px;
+  border-radius: 8px;
   transition: all 0.3s ease;
-  background-color: #f8f9fa;
-  position: relative;
 }
 
 .form-control:focus {
-<<<<<<< HEAD
-  border-color: #667eea;
-  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15);
-=======
-  border-color: #2a5298;
-  box-shadow: 0 0 0 0.2rem rgba(42, 82, 152, 0.15);
->>>>>>> 0056e46 (Updated frontend structure)
-  background-color: white;
-  transform: translateY(-2px);
+  border-color: #64ffda !important;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.1) !important;
+  outline: none;
 }
 
-.form-control:hover {
-<<<<<<< HEAD
-  border-color: #667eea;
-=======
-  border-color: #2a5298;
->>>>>>> 0056e46 (Updated frontend structure)
-  background-color: white;
+.form-control::placeholder {
+  color: #495670;
 }
 
-textarea.form-control {
-  min-height: 120px;
-  resize: vertical;
-}
-
+/* Submit Button */
 .submit-btn {
-<<<<<<< HEAD
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-=======
-  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  border: none;
-  border-radius: 15px;
-  padding: 1rem 3rem;
-  font-size: 1.1rem;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #64ffda;
+  color: #64ffda;
+  padding: 15px;
+  border-radius: 8px;
   font-weight: 600;
-  color: white;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.submit-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transition: left 0.5s;
-}
-
-.submit-btn:hover::before {
-  left: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .submit-btn:hover {
+  background: rgba(100, 255, 218, 0.1);
   transform: translateY(-3px);
-<<<<<<< HEAD
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
-=======
-  box-shadow: 0 10px 25px rgba(42, 82, 152, 0.3);
->>>>>>> 0056e46 (Updated frontend structure)
+  box-shadow: 0 10px 20px -10px rgba(100, 255, 218, 0.3);
 }
 
-.submit-btn:active {
-  transform: translateY(-1px);
-}
-
-/* Floating Icons */
+/* Floating Icons (Your Original Logic) */
 .floating-icon {
   position: absolute;
-<<<<<<< HEAD
-  color: rgba(102, 126, 234, 0.1);
-=======
-  color: rgba(42, 82, 152, 0.08);
->>>>>>> 0056e46 (Updated frontend structure)
-  font-size: 2rem;
-  animation: floatIcon 6s ease-in-out infinite;
+  color: rgba(100, 255, 218, 0.05);
+  font-size: 3rem;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
 }
 
-.floating-icon:nth-child(1) {
-  top: 10%;
-  left: 5%;
-  animation-delay: 0s;
+.floating-icon:nth-child(3) { top: 10%; left: 10%; }
+.floating-icon:nth-child(4) { top: 20%; right: 10%; }
+.floating-icon:nth-child(5) { bottom: 15%; left: 5%; }
+.floating-icon:nth-child(6) { bottom: 10%; right: 5%; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
-.floating-icon:nth-child(2) {
-  top: 20%;
-  right: 8%;
-  animation-delay: 2s;
-}
-
-.floating-icon:nth-child(3) {
-  bottom: 15%;
-  left: 8%;
-  animation-delay: 4s;
-}
-
-.floating-icon:nth-child(4) {
-  bottom: 25%;
-  right: 5%;
-  animation-delay: 1s;
-}
-
-@keyframes floatIcon {
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-    opacity: 0.3;
-  }
-  50% {
-    transform: translateY(-15px) rotate(180deg);
-    opacity: 0.6;
-  }
-}
-
-/* Input Focus Effects */
-.form-group {
-  position: relative;
-}
-
-.form-group::after {
-  content: "";
+/* Background Blobs */
+.blob {
   position: absolute;
-  bottom: -5px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-<<<<<<< HEAD
-  background: linear-gradient(90deg, #667eea, #764ba2);
-=======
-  background: linear-gradient(90deg, #2a5298, #1e3c72);
->>>>>>> 0056e46 (Updated frontend structure)
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  background: rgba(100, 255, 218, 0.03);
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: 0;
 }
+.blob:nth-child(1) { top: -100px; right: -100px; }
+.blob:nth-child(2) { bottom: -100px; left: -100px; }
 
-.form-group:focus-within::after {
-  width: 100%;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .contact-title {
-    font-size: 2rem;
-  }
-
-  .contact-form {
-    padding: 1.5rem 2rem 2.5rem;
-  }
-
-  .contact-header {
-    padding: 2rem 1.5rem 1.5rem;
-  }
-
-  .submit-btn {
-    padding: 0.875rem 2rem;
-    font-size: 1rem;
-  }
-
-  .form-control {
-    padding: 0.875rem 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .contact-container {
-    padding: 2rem 0;
-  }
-
-  .contact-title {
-    font-size: 1.75rem;
-  }
-
-  .contact-form {
-    padding: 1rem 1.5rem 2rem;
-  }
-
-  .floating-icon {
-    display: none;
-  }
-}
-
-/* Success Animation */
-.success-message {
-  background: linear-gradient(135deg, #28a745, #20c997);
-  color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 1rem;
-  display: none;
-  animation: slideIn 0.5s ease;
-}
-
-@keyframes slideIn {
+/* --- Entrance Keyframes --- */
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+/* --- Section Layout --- */
+.contact-section {
+  background-color: #0a192f;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- Glassmorphism Card with Animation --- */
+.contact-card {
+  background: rgba(17, 34, 64, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+
+  /* Entrance Animation */
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+  animation-delay: 0.2s; /* Slight delay so it feels intentional */
+}
+
+/* --- Animated Background Blobs --- */
+.blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(100, 255, 218, 0.04);
+  filter: blur(100px);
+  border-radius: 50%;
+  z-index: 0;
+  animation: blobFloat 20s infinite alternate ease-in-out;
+}
+
+.blob:nth-child(1) { 
+  top: -150px; 
+  right: -150px; 
+}
+
+.blob:nth-child(2) { 
+  bottom: -150px; 
+  left: -150px; 
+  animation-delay: -5s; /* Offset the timing */
+}
+
+@keyframes blobFloat {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, 50px) scale(1.1); }
+  100% { transform: translate(20px, -20px) scale(1); }
+}
+
+/* --- Form Elements --- */
+.form-group {
+  /* Animate individual form groups for a super-premium feel */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Staggering the form inputs */
+.form-group:nth-child(1) { animation-delay: 0.4s; }
+.form-group:nth-child(2) { animation-delay: 0.5s; }
+.form-group:nth-child(3) { animation-delay: 0.6s; }
+
+/* ... keep your existing .form-control, .submit-btn, and .floating-icon styles ... */

@@ -1,409 +1,178 @@
-body {
-  background-color: #f8f9fa;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-section {
-  scroll-margin-top: 100px; /* adjust based on navbar height */
-}
-
-/* Projects Section Styles */
 .projects-section {
-<<<<<<< HEAD
-  background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
-=======
-  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  padding: 5rem 0;
-  position: relative;
-  overflow: hidden;
+  background-color: #0a192f;
+  padding: 100px 0;
 }
 
-
-.section-title {
-  font-size: 3rem;
-  font-weight: 700;
-<<<<<<< HEAD
-  color: white;
-=======
-  color: #1e3c72;
->>>>>>> 0056e46 (Updated frontend structure)
-  margin-bottom: 1rem;
-  position: relative;
-  display: inline-block;
+.section-title span {
+  color: #64ffda;
 }
-
 
 .section-subtitle {
-  font-size: 1.3rem;
-<<<<<<< HEAD
-  color: rgba(255, 255, 255, 0.9);
-=======
-  color: #495057;
->>>>>>> 0056e46 (Updated frontend structure)
-  font-weight: 300;
-  letter-spacing: 1px;
+  color: #8892b0;
+  margin-bottom: 50px;
 }
 
-/* Project Card Styles */
+/* Project Card */
 .project-card {
-  background: white;
-  border-radius: 20px;
+  background: #112240;
+  border-radius: 10px;
   overflow: hidden;
-<<<<<<< HEAD
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(102, 126, 234, 0.1);
-=======
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(42, 82, 152, 0.1);
->>>>>>> 0056e46 (Updated frontend structure)
-  transition: all 0.3s ease;
-  position: relative;
-  margin-bottom: 2rem;
   height: 100%;
-  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
 }
 
 .project-card:hover {
-<<<<<<< HEAD
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-=======
-  transform: translateY(-8px);
-  box-shadow: 0 12px 32px rgba(42, 82, 152, 0.2);
-  border-color: rgba(42, 82, 152, 0.3);
->>>>>>> 0056e46 (Updated frontend structure)
+  box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+  border-color: #64ffda;
 }
 
-/* Project Image */
-.project-image {
+/* Image Container */
+.project-img-container {
   position: relative;
+  height: 200px;
   overflow: hidden;
-  height: 250px;
-<<<<<<< HEAD
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-=======
-  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
->>>>>>> 0056e46 (Updated frontend structure)
 }
 
-.project-image img {
+.project-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.3s ease;
 }
 
-.project-card:hover .project-image img {
-  transform: scale(1.05);
-}
-
-/* Project Image Overlay */
-.project-image::after {
-  content: "";
+/* Overlay */
+.project-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-<<<<<<< HEAD
-  background: linear-gradient(45deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
-=======
-  background: linear-gradient(45deg, rgba(42, 82, 152, 0.8) 0%, rgba(30, 60, 114, 0.8) 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.project-card:hover .project-image::after {
-  opacity: 1;
-}
-
-/* Project Link Button */
-.project-link-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-<<<<<<< HEAD
-  color: #667eea;
-=======
-  color: #2a5298;
->>>>>>> 0056e46 (Updated frontend structure)
-  border: none;
-  border-radius: 50px;
-  padding: 12px 24px;
-  font-weight: 600;
-  text-decoration: none;
-  opacity: 0;
-  transition: all 0.3s ease;
-  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 25, 47, 0.85);
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.project-card:hover .project-link-btn {
+.project-card:hover .project-overlay {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1.05);
 }
 
-.project-link-btn:hover {
-<<<<<<< HEAD
-  background: #667eea;
-=======
-  background: #2a5298;
->>>>>>> 0056e46 (Updated frontend structure)
-  color: white;
-  text-decoration: none;
+.overlay-links a {
+  font-size: 1.5rem;
+  color: #ccd6f6;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.overlay-links a:hover {
+  color: #64ffda;
 }
 
 /* Project Content */
-.project-content {
-  padding: 2rem;
-  text-align: center; /* Center all content */
+.project-body {
+  padding: 25px;
 }
 
-/* Larger, centered project name with better styling */
-.project-name {
-  font-size: 2.0rem;
-  font-weight: 800;
-<<<<<<< HEAD
-  background: linear-gradient(135deg, #2c3e50 0%, #667eea 100%);
-=======
-  background: linear-gradient(135deg, #2c3e50 0%, #2a5298 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 1.2rem;
-  line-height: 1.3;
-  letter-spacing: -0.5px;
-  text-align: center; /* Center the project name */
+.project-title {
+  color: #ccd6f6;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-/* Larger, centered description with better readability */
-.project-description {
-  font-size: 1.0rem;
-  color: #495057;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  text-align: center;
+.project-text {
+  color: #8892b0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-/* Tools/Technologies */
-.project-tools {
-  margin-bottom: 1.5rem;
-}
-
-/* Centered tools label with larger font */
-.tools-label {
-  font-size: 0.95rem;
-  font-weight: 700;
-<<<<<<< HEAD
-  color: #667eea;
-=======
-  color: #2a5298;
->>>>>>> 0056e46 (Updated frontend structure)
-  margin-bottom: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center the label */
-  gap: 0.5rem;
-}
-
-.tools-label i {
-  font-size: 1.1rem;
-}
-
-/* Center the tool tags container */
-.tools-tags {
+/* Tech Tags */
+.tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
-  justify-content: center;
+  gap: 10px;
 }
 
-/* Larger tool tags with better styling */
-.tool-tag {
-  display: inline-block;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  color: #495057;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.7rem 1.4rem;
-  border-radius: 12px;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-  position: relative;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.tech-stack span {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.75rem;
+  color: #64ffda;
+  background: rgba(100, 255, 218, 0.1);
+  padding: 5px 12px;
+  border-radius: 20px;
 }
 
-/* Project Footer */
-.project-footer {
-  padding: 0 2rem 2rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.project-link {
-<<<<<<< HEAD
-  color: #667eea;
-=======
-  color: #2a5298;
->>>>>>> 0056e46 (Updated frontend structure)
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.project-link:hover {
-<<<<<<< HEAD
-  color: #764ba2;
-=======
-  color: #1e3c72;
->>>>>>> 0056e46 (Updated frontend structure)
-  text-decoration: none;
-  transform: translateX(5px);
-}
-
-.project-link i {
-  font-size: 1rem;
-}
-
-/* Featured Project */
-.featured-project {
-  position: relative;
-}
-
-.featured-project::before {
-  content: "Featured";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: linear-gradient(135deg, #ffc107 0%, #ff8c00 100%);
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 3px 10px rgba(255, 193, 7, 0.3);
-  z-index: 5;
-}
-
-/* Projects Grid */
-.projects-grid {
-  position: relative;
-  z-index: 2;
-}
-
-/* Mobile Styles */
+/* Mobile Tweak */
 @media (max-width: 768px) {
-  .projects-section {
-    padding: 3rem 0;
-  }
-
-  .section-title {
-    font-size: 2.2rem;
-  }
-
-  .section-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-  }
-
-  .project-content {
-    padding: 1.5rem;
-  }
-
-  .project-name {
-    font-size: 1.8rem; /* Larger on mobile */
-  }
-
-  .project-description {
-    font-size: 1.05rem; /* Larger on mobile */
-  }
-
-  .project-image {
-    height: 200px;
-  }
-
-  .project-footer {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+  .project-card {
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width: 480px) {
-  .project-content {
-    padding: 1.2rem;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .project-name {
-    font-size: 1.5rem; /* Adjusted for small screens */
-  }
-
-  .project-image {
-    height: 180px;
-  }
-
-  .tool-tag {
-    font-size: 0.85rem; /* Slightly larger on mobile */
-    padding: 0.5rem 1rem;
-  }
-}
-
-/* Decorative elements */
-.projects-decoration {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-<<<<<<< HEAD
-  border: 2px solid rgba(102, 126, 234, 0.1);
-=======
-  border: 2px solid rgba(42, 82, 152, 0.08);
->>>>>>> 0056e46 (Updated frontend structure)
-  border-radius: 50%;
-  animation: rotate 25s linear infinite;
-}
-
-.projects-decoration:nth-child(1) {
-  top: 15%;
-  left: 8%;
-  animation-delay: 0s;
-}
-
-.projects-decoration:nth-child(2) {
-  top: 70%;
-  right: 10%;
-  animation-delay: -8s;
-}
-
-.projects-decoration:nth-child(3) {
-  bottom: 25%;
-  left: 15%;
-  animation-delay: -16s;
-}
-
-@keyframes rotate {
+/* --- Animation Keyframes (If not already in global styles) --- */
+@keyframes fadeInUp {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(30px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+.projects-section {
+  background-color: #0a192f;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Base Card Style with Animation */
+.project-card {
+  background: #112240;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+  /* Initial state for animation */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* --- Staggered Delay for the Grid (up to 6 projects) --- */
+.col-lg-4:nth-child(1) .project-card { animation-delay: 0.1s; }
+.col-lg-4:nth-child(2) .project-card { animation-delay: 0.2s; }
+.col-lg-4:nth-child(3) .project-card { animation-delay: 0.3s; }
+.col-lg-4:nth-child(4) .project-card { animation-delay: 0.4s; }
+.col-lg-4:nth-child(5) .project-card { animation-delay: 0.5s; }
+.col-lg-4:nth-child(6) .project-card { animation-delay: 0.6s; }
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+  border-color: #64ffda;
+}
+
+/* Decorative Background (Matching Home/About/Exp) */
+.projects-section::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(100, 255, 218, 0.02);
+  filter: blur(100px);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ... keep your existing .project-img, .project-overlay, and .tech-stack styles ... */

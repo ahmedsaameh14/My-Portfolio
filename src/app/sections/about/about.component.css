@@ -1,291 +1,173 @@
-section {
-  scroll-margin-top: 100px; /* adjust based on navbar height */
-}
-
-/* About Section Styles */
 .about-section {
-<<<<<<< HEAD
-  background: linear-gradient(360deg, #1a1a1a 0%, #000000 100%);
-=======
-  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  padding: 5rem 0;
+  background-color: #0a192f;
+  padding: 8rem 0;
   position: relative;
   overflow: hidden;
 }
 
-/* Decorative circles (lighter to avoid blocking LCP) */
-.hero-decoration {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-<<<<<<< HEAD
-  border: 1px solid rgba(255, 255, 255, 0.1);
-=======
-  border: 1px solid rgba(42, 82, 152, 0.08);
->>>>>>> 0056e46 (Updated frontend structure)
-  border-radius: 50%;
-}
-
-.hero-decoration:nth-child(1) {
-  top: 50%;
-  left: 5%;
-}
-.hero-decoration:nth-child(2) {
-  top: 25%;
-  right: 10%;
-}
-.hero-decoration:nth-child(3) {
-  bottom: 0%;
-  left: 50%;
-}
-
-.about-content {
+/* Glassmorphism Card */
+.about-card {
   position: relative;
   z-index: 2;
-  background: white;
-  border-radius: 20px;
-  padding: 3rem;
-<<<<<<< HEAD
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(102, 126, 234, 0.1);
-=======
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(42, 82, 152, 0.1);
->>>>>>> 0056e46 (Updated frontend structure)
-  transition: all 0.3s ease;
+  background: rgba(17, 34, 64, 0.7); /* Light Navy with Transparency */
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 4rem;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  box-shadow: 0 20px 50px rgba(2, 12, 27, 0.5);
+  transition: transform 0.3s ease;
 }
 
-.about-content:hover {
+.about-card:hover {
   transform: translateY(-5px);
-<<<<<<< HEAD
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-=======
-  box-shadow: 0 12px 32px rgba(42, 82, 152, 0.15);
-  border-color: rgba(42, 82, 152, 0.2);
->>>>>>> 0056e46 (Updated frontend structure)
+  border-color: rgba(100, 255, 218, 0.3);
 }
 
+/* Section Title */
 .section-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 2.8rem);
   font-weight: 700;
-  color: #2c3e50;
+  color: #ccd6f6;
   margin-bottom: 1rem;
-  position: relative;
-  display: inline-block;
 }
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 60px;
-  height: 4px;
-<<<<<<< HEAD
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-=======
-  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  border-radius: 2px;
+.section-title span {
+  color: #64ffda; /* Aquamarine accent */
 }
 
-.section-subtitle {
+/* Typography */
+.about-lead {
   font-size: 1.3rem;
-<<<<<<< HEAD
-  color: #667eea;
-=======
-  color: #2a5298;
->>>>>>> 0056e46 (Updated frontend structure)
   font-weight: 500;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.about-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #495057;
+  color: #ccd6f6;
+  line-height: 1.6;
   margin-bottom: 1.5rem;
-  text-align: justify;
 }
 
-.about-text:first-of-type {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #2c3e50;
+.about-details {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #8892b0;
+  text-align: left;
 }
 
-.about-text:last-of-type {
-  margin-bottom: 0;
-}
-
-/* Highlight text */
 .highlight {
-<<<<<<< HEAD
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-=======
-  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #64ffda;
   font-weight: 600;
 }
 
-/* Quote styling */
-.about-quote {
-<<<<<<< HEAD
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-=======
-  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
->>>>>>> 0056e46 (Updated frontend structure)
-  color: white;
-  padding: 2rem;
-  border-radius: 15px;
-  margin: 2rem 0;
-  position: relative;
-  font-style: italic;
-  font-size: 1.1rem;
-  text-align: center;
+/* Stats Boxes */
+.stat-box {
+  background: rgba(10, 25, 47, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid #64ffda;
+  transition: all 0.3s ease;
 }
 
-.about-quote::before {
-  content: '"';
-  font-size: 4rem;
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  opacity: 0.3;
-  font-family: serif;
-}
-
-.about-quote::after {
-  content: '"';
-  font-size: 4rem;
-  position: absolute;
-  bottom: -30px;
-  right: 20px;
-  opacity: 0.3;
-  font-family: serif;
-}
-
-/* Stats or highlights */
-.about-stats {
-  background: #f8f9fa;
-  border-radius: 15px;
-  padding: 2rem;
-  margin-top: 2rem;
-<<<<<<< HEAD
-  border-left: 5px solid #667eea;
-=======
-  border-left: 5px solid #2a5298;
->>>>>>> 0056e46 (Updated frontend structure)
-}
-
-.stat-item {
-  text-align: center;
-  padding: 1rem;
-}
-
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-<<<<<<< HEAD
-  color: #667eea;
-=======
-  color: #2a5298;
->>>>>>> 0056e46 (Updated frontend structure)
-  display: block;
+.stat-box:hover {
+  background: rgba(100, 255, 218, 0.05);
 }
 
 .stat-label {
-  font-size: 0.9rem;
-  color: #6c757d;
+  display: block;
+  font-size: 0.8rem;
+  color: #64ffda;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
 }
 
-/* Mobile Styles */
-@media (max-width: 991.98px) {
-<<<<<<< HEAD
-  .navbar-collapse {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin-top: 1rem;
-    backdrop-filter: blur(10px);
-  }
+.stat-value {
+  font-size: 1rem;
+  color: #ccd6f6;
+  font-weight: 600;
+}
 
-  .nav-link {
-    margin: 8px 0;
-    text-align: center;
-    padding: 15px 20px !important;
-  }
+/* Re-using your decorative elements with the new color */
+.hero-decoration {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(100, 255, 218, 0.05);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
+}
 
-  .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+.hero-decoration:nth-child(1) { top: 10%; left: 5%; }
+.hero-decoration:nth-child(2) { top: 40%; right: -50px; }
+.hero-decoration:nth-child(3) { bottom: 5%; left: 40%; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Mobile Tweaks */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .about-lead {
+    font-size: 1.15rem;
+  }
+}
+
+/* 1. Entrance Animation for the Card */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-=======
-  .about-section {
-    padding: 3rem 0;
->>>>>>> 0056e46 (Updated frontend structure)
-  }
 }
 
-@media (max-width: 768px) {
-  .about-section {
-    padding: 3rem 0;
-  }
-
-  .about-content {
-    padding: 2rem;
-    border-radius: 15px;
-  }
-
-  .section-title {
-    font-size: 2.2rem;
-  }
-
-  .section-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .about-text {
-    font-size: 1rem;
-    text-align: left;
-  }
-
-  .about-text:first-of-type {
-    font-size: 1.1rem;
-  }
-
-  .about-quote {
-    padding: 1.5rem;
-    font-size: 1rem;
-  }
-
-  .stat-number {
-    font-size: 2rem;
-  }
+.about-card {
+  /* ... keep your existing styles ... */
+  animation: fadeInUp 1s ease-out forwards;
 }
 
-@media (max-width: 480px) {
-  .about-content {
-    padding: 1.5rem;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .section-subtitle {
-    font-size: 1rem;
-  }
+/* 2. Floating Animated Blobs (The "Home" look) */
+.about-section::before,
+.about-section::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(100, 255, 218, 0.03);
+  filter: blur(80px);
+  z-index: 1;
+  animation: pulseBlob 10s infinite alternate;
 }
+
+.about-section::before {
+  top: -100px;
+  left: -100px;
+}
+
+.about-section::after {
+  bottom: -100px;
+  right: -100px;
+  animation-delay: 2s;
+}
+
+@keyframes pulseBlob {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.2) translate(30px, 50px); }
+}
+
+/* 3. Staggered Animation for Stat Boxes */
+.stat-box {
+  /* ... keep your existing styles ... */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.stat-box:nth-child(1) { animation-delay: 0.3s; }
+.stat-box:nth-child(2) { animation-delay: 0.5s; }
+.stat-box:nth-child(3) { animation-delay: 0.7s; }

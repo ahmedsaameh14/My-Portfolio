@@ -1,155 +1,92 @@
-<<<<<<< HEAD
+/* --- Global Styles --- */
 body {
-  background-color: #f8f9fa;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a192f; /* Deep Navy Background */
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #ccd6f6;
+  margin: 0;
 }
 
-/* Remove white space between navbar and hero */
+/* --- Navbar Container --- */
 .portfolio-navbar {
-  /* Changed from purple gradient to dark gradient */
-  background: linear-gradient(360deg, #1a1a1a 0%, #000000 100%);
-  /* border-radius: 0 0 20px 20px; */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: rgba(10, 25, 47, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 1rem 0;
-  margin-bottom: 0 !important; /* Remove Bootstrap default margin */
-=======
-/* Portfolio Navbar - Transparent to Solid on Scroll */
-.portfolio-navbar {
-  background: transparent;
-  padding: 1.2rem 0;
-  margin-bottom: 0 !important;
->>>>>>> 0056e46 (Updated frontend structure)
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-<<<<<<< HEAD
-  
-=======
-  transition: all 0.3s ease;
-  box-shadow: none;
-}
-
-/* Scrolled State - Solid Background */
-.portfolio-navbar.header-scrolled {
-  background: rgba(30, 60, 114, 0.98);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(30, 60, 114, 0.3);
-  padding: 0.8rem 0;
->>>>>>> 0056e46 (Updated frontend structure)
-}
-
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: white !important;
-  text-decoration: none;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
   transition: all 0.3s ease;
 }
 
-.navbar-brand:hover {
-  transform: scale(1.05);
-}
-
-.navbar-toggler {
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  padding: 8px 12px;
-  transition: all 0.3s ease;
-}
-
-.navbar-toggler:hover {
-  border-color: rgba(255, 255, 255, 0.6);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
+/* --- Nav Links (Desktop) --- */
 .nav-link {
-<<<<<<< HEAD
-  color: rgba(255, 255, 255, 0.9) !important;
-=======
-  color: rgba(255, 255, 255, 0.95) !important;
->>>>>>> 0056e46 (Updated frontend structure)
-  font-weight: 600;
-  font-size: 1rem;
+  color: #8892b0 !important; /* Muted Slate */
+  font-weight: 500;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-<<<<<<< HEAD
-  padding: 12px 24px !important;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  position: relative;
-  margin: 0 8px;
-=======
+  letter-spacing: 1.2px;
   padding: 10px 20px !important;
-  border-radius: 25px;
   transition: all 0.3s ease;
-  position: relative;
-  margin: 0 6px;
->>>>>>> 0056e46 (Updated frontend structure)
-  text-decoration: none;
 }
 
-.nav-link:hover {
-  color: white !important;
-<<<<<<< HEAD
-  background-color: rgba(255, 255, 255, 0.2);
+.nav-link:hover, .nav-link:focus {
+  color: #64ffda !important; /* Aquamarine Accent */
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-=======
-  background-color: rgba(255, 255, 255, 0.15);
-  transform: translateY(-2px);
->>>>>>> 0056e46 (Updated frontend structure)
 }
 
-.nav-link.active {
-  color: white !important;
-<<<<<<< HEAD
-  background-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-=======
-  background-color: rgba(255, 255, 255, 0.2);
->>>>>>> 0056e46 (Updated frontend structure)
+/* --- Contact Button --- */
+.contact-btn {
+  border: 1px solid #64ffda;
+  border-radius: 4px !important;
+  color: #64ffda !important;
+  margin-left: 15px;
 }
 
-.nav-link i {
-  margin-right: 8px;
-  font-size: 1.1rem;
+.contact-btn:hover {
+  background: rgba(100, 255, 218, 0.1);
 }
-<<<<<<< HEAD
-=======
 
-/* Mobile Menu Styling */
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    background: rgba(30, 60, 114, 0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin-top: 1rem;
-    box-shadow: 0 8px 24px rgba(30, 60, 114, 0.3);
+/* --- Mobile Toggler --- */
+.navbar-toggler {
+  border: 1px solid #64ffda; /* Teal border like in your image */
+  padding: 5px 8px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Force the icon to be Aquamarine */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28100, 255, 218, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* --- Mobile View Adjustments (Below 991px) --- */
+@media (max-width: 991px) {
+  .container {
+    display: flex;
+    justify-content: flex-end; /* Ensures the toggler stays on the right */
   }
 
-  .portfolio-navbar.header-scrolled .navbar-collapse {
-    background: rgba(30, 60, 114, 0.98);
+  .navbar-collapse {
+    background: #112240; /* Slightly lighter navy for dropdown */
+    margin-top: 1rem;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center; /* Centers the text inside the dropdown */
+    border: 1px solid rgba(100, 255, 218, 0.1);
   }
 
   .nav-link {
-    margin: 8px 0;
-    text-align: center;
-    padding: 12px 20px !important;
+    padding: 12px 0 !important;
+    margin: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
 
-  .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(0);
-  }
-
-  .navbar-brand {
-    font-size: 1.5rem;
+  .contact-btn {
+    margin-left: 0 !important;
+    margin-top: 10px;
+    display: inline-block;
   }
 }
->>>>>>> 0056e46 (Updated frontend structure)

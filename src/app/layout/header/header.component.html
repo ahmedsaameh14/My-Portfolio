@@ -1,58 +1,17 @@
-<head>
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-</head>
-
-<!-- Portfolio Navbar  -->
 <nav class="navbar navbar-expand-lg portfolio-navbar">
-    <div class="container">
+  <div class="container"> <button class="navbar-toggler ms-auto" type="button" (click)="toggleMenu()" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Toggler Button  -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar"
-            aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible Content  -->
-        <div class="collapse navbar-collapse justify-content-center" id="portfolioNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">
-
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">
-
-                        About
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">
-
-                        Skills
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experince">
-
-                        Experience
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">
-
-                        Projects
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">
-
-                        Contact Me
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div class="collapse navbar-collapse justify-content-center" [ngClass]="{ 'show': !isMenuCollapsed }">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home" (click)="closeMenu()">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" (click)="closeMenu()">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" (click)="closeMenu()">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience" (click)="closeMenu()">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" (click)="closeMenu()">Projects</a></li>
+        <li class="nav-item"><a class="nav-link contact-btn" href="#contact" (click)="closeMenu()">Contact Me</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
